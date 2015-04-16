@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
     bzero(buffer,256);
     
     n = read(sockfd,buffer,255);
-    if(strcmp(buffer,"Good bye!"))
+    if(strcmp(buffer,"Good bye!")==0)
         {
             cout << buffer << endl;
             close(sockfd);
